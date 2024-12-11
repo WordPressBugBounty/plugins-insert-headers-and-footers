@@ -386,7 +386,7 @@ class WPCode_Snippet_Execute {
 		$this->line_reference = $line_reference;
 
 		try {
-			eval( $code ); // phpcs:ignore Squiz.PHP.Eval.Discouraged
+			$this->run_eval( $code );
 		} catch ( Error $e ) {
 			$error = array(
 				'message' => $e->getMessage(),
@@ -399,6 +399,17 @@ class WPCode_Snippet_Execute {
 		}
 
 		return ob_get_clean();
+	}
+
+	/**
+	 * Execute the code in a separate method to avoid overriding variable names but still being able to catch errors.
+	 *
+	 * @param string $code The code to execute.
+	 *
+	 * @return void
+	 */
+	public function run_eval( $code ) {
+		eval( $code ); // phpcs:ignore Squiz.PHP.Eval.Discouraged
 	}
 
 	/**
