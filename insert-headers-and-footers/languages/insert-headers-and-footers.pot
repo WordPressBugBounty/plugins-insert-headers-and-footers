@@ -2,14 +2,14 @@
 # This file is distributed under the GPLv2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPCode Lite 2.2.4\n"
+"Project-Id-Version: WPCode Lite 2.2.4.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/insert-headers-and-footers\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-12-11T13:06:35+00:00\n"
+"POT-Creation-Date: 2024-12-11T16:33:41+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.5.0\n"
 "X-Domain: insert-headers-and-footers\n"
@@ -2238,7 +2238,7 @@ msgid "This snippet first threw an error at %1$s on %2$s (%3$s ago)."
 msgstr ""
 
 #: includes/admin/pages/class-wpcode-admin-page-snippet-manager.php:2307
-#: includes/class-wpcode-snippet-execute.php:608
+#: includes/class-wpcode-snippet-execute.php:607
 msgid "Error message:"
 msgstr ""
 
@@ -3224,27 +3224,27 @@ msgstr ""
 msgid "Start writing HTML and add PHP code like you would in a .php file with Universal snippets."
 msgstr ""
 
-#: includes/class-wpcode-snippet-execute.php:558
+#: includes/class-wpcode-snippet-execute.php:557
 msgid "Snippet has not been activated due to an error."
 msgstr ""
 
-#: includes/class-wpcode-snippet-execute.php:562
+#: includes/class-wpcode-snippet-execute.php:561
 msgid "Please click the back button in the browser to update the snippet."
 msgstr ""
 
-#: includes/class-wpcode-snippet-execute.php:565
+#: includes/class-wpcode-snippet-execute.php:564
 msgid "WPCode has detected an error in one of the snippets which has now been automatically deactivated."
 msgstr ""
 
-#: includes/class-wpcode-snippet-execute.php:579
+#: includes/class-wpcode-snippet-execute.php:578
 msgid "View Snippets With Errors"
 msgstr ""
 
-#: includes/class-wpcode-snippet-execute.php:593
+#: includes/class-wpcode-snippet-execute.php:592
 msgid "View error logs"
 msgstr ""
 
-#: includes/class-wpcode-snippet-execute.php:602
+#: includes/class-wpcode-snippet-execute.php:601
 msgid "Enable error logging"
 msgstr ""
 

@@ -374,10 +374,6 @@ class WPCode_Snippet_Execute {
 
 		$error = false;
 
-		if ( ! empty( $snippet->attributes ) ) {
-			extract( $snippet->attributes, EXTR_SKIP ); // phpcs:ignore WordPress.PHP.DontExtract.extract_extract
-		}
-
 		// Don't allow executing suspicious code.
 		if ( self::is_code_not_allowed( $code ) ) {
 			$code = '';
@@ -409,6 +405,9 @@ class WPCode_Snippet_Execute {
 	 * @return void
 	 */
 	public function run_eval( $code ) {
+		if ( ! empty( $this->snippet_executed->attributes ) ) {
+			extract( $this->snippet_executed->attributes, EXTR_SKIP ); // phpcs:ignore WordPress.PHP.DontExtract.extract_extract
+		}
 		eval( $code ); // phpcs:ignore Squiz.PHP.Eval.Discouraged
 	}
 
